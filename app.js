@@ -40,7 +40,6 @@ const createNewTaskElement = function(taskString){
 
 // Add a new task to the incomplete tasks list
 const addTask = function(){
-    console.log("Add Task...");
     if (!taskInput.value) return; // Prevent adding empty tasks
     const listItem = createNewTaskElement(taskInput.value);
 
@@ -53,12 +52,7 @@ const addTask = function(){
 
 // Edit an existing task (toggle between Edit/Save mode)
 const editTask = function(){
-    console.log("Edit Task...");
-    console.log("Change 'edit' to 'save'");
-
-
     const listItem = this.parentNode;
-
     const editInput = listItem.querySelector('input[type=text]');
     const label = listItem.querySelector("label");
     const editBtn = listItem.querySelector(".edit");
@@ -78,8 +72,6 @@ const editTask = function(){
 
 // Delete a task from the list
 const deleteTask = function(){
-    console.log("Delete Task...");
-
     const listItem = this.parentNode;
     listItem.remove();
 
@@ -88,8 +80,6 @@ const deleteTask = function(){
 
 // Mark a task as completed
 const taskCompleted = function(){
-    console.log("Complete Task...");
-
     const listItem = this.parentNode;
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
@@ -98,7 +88,6 @@ const taskCompleted = function(){
 
 
 const taskIncomplete = function(){
-    console.log("Incomplete Task...");
     const listItem = this.parentNode;
     incompleteTaskHolder.appendChild(listItem); // Move task back to incomplete list
     bindTaskEvents(listItem,taskCompleted);  // Re-bind events for task to be marked completed

@@ -4,6 +4,7 @@ body {
     color: #333;
     font-family: Lato, sans-serif;
 }
+/* Info Section */
 .info-section {
     width: 500px;
     margin: 0 auto;
@@ -17,7 +18,7 @@ body {
     font-family: fantasy, cursive;
 }
 
-
+/* Task List */
 .tasks-list  {
     display: block;
     width: 500px;
@@ -31,6 +32,8 @@ body {
 .tasks-list__task-row {
     display: flex;
 }
+
+/* General Styles */
 ul {
     margin:0;
     padding: 0px;
@@ -64,6 +67,8 @@ label[for='new-task'] {
     margin: 0;
     text-transform: uppercase;
 }
+
+/* Input Fields */
 input[type="text"] {
     margin: 0;
     font-size: 18px;
@@ -80,7 +85,7 @@ input[type="text"]:focus {
     color: #333;
 }
 
-/* New Task */
+/* New Task Input */
 label[for='new-task'] {
     display: block;
     margin: 0 0 20px;
@@ -89,7 +94,7 @@ input#new-task {
     width: 318px;
 }
 
-/* Task list */
+/* Task list Items */
 li {
     overflow: hidden;
     padding: 20px 0;
@@ -115,6 +120,8 @@ li > label {
 li > input[type="text"] {
     width: 226px;
 }
+
+/* Delete Button */
 button.delete img {
     height: 2em;
     transform: rotateZ(45deg);
@@ -124,7 +131,7 @@ button.delete img:hover {
     transform: rotateZ(0);
 }
 
-/* Completed */
+/* Completed Tasks */
 ul#completed-tasks label {
     text-decoration: line-through;
     color: #888;

@@ -4,16 +4,16 @@ body {
     color: #333;
     font-family: Lato, sans-serif;
 }
-.aaa {
+.info-section {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.aaa img {
+.info-section img {
     width: 100%;
 }
-.aaa .more_inf {
+.info-section .more-details-link {
     font-family: fantasy, cursive;
 }
 
@@ -21,17 +21,17 @@ body {
 .aaa { text-align: center;
 }
 }
-.centered-main-page-element {
+.tasks-list  {
     display: block;
     width: 500px;
     margin: 0 auto 0;
 }
-.task {
+.tasks-list__task {
     width: 56%;
     display: inline-block;
     flex-grow: 1
 }
-.task-row-wrapper {
+.tasks-list__task-row {
     display: flex;
 }
 ul {

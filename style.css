@@ -17,10 +17,7 @@ body {
     font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
-.aaa { text-align: center;
-}
-}
+
 .tasks-list  {
     display: block;
     width: 500px;
@@ -145,4 +142,10 @@ ul li.editMode input[type=text] {
 
 ul li.editMode label {
     display: none;
+}
+
+@media (max-width:768px) {
+    .info-section { 
+        text-align: center;
+}
 }
